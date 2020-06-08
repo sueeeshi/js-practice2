@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Runner Registration</title>
+  </head>
+  <body>
+    <h1>Get your race number now!</h1>
+    <h3 id="yourResult"></h3>
+
+    <form id="registerNow" name="registerNow">
+
+<label for="userName">Runner's Name</label><br />
+<input type="text" id="userName" name="userName" placeholder="Enter your name" oninput="getValueName()"></input><br /><br />
+
+<label for="userAge">Runner's age</label><br />
+<input type="text" id="userAge" name="userAge" placeholder="Enter your age" oninput="getValueAge()"></input>
+<br /><br />
+
+<span id="showWhenAbove18" style="display: none;">
+<label>Early Bird?</label>
+<input type="radio" id="registeredEarlyYes" value="true" name="EarlyOrNot" onclick="earlyYes()">Yes
+<input type="radio" id="registeredEarlyNo" value="false" name="EarlyOrNot" onclick="earlyNo()">No
+<br /><br /></span>
+
+<button type="submit" onclick="showResult()">Submit</button>
+
+</form>
+<br />
+<p>Start time: <br /><br />
+  Early adults (race number at or above 1000) run at 9:30 am.<br />
+  Late adults run at 11:00 am.<br />
+  Youth registrants run at 12:30 pm (regardless of registration).<br /></p>
+
+</body>
+<script type="text/javascript" src="script1.js"></script>
+</html>
